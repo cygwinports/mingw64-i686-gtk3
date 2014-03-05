@@ -3,7 +3,7 @@ ORIG_PN="gtk+"
 inherit cross gnome2
 
 NAME="mingw64-i686-gtk3"
-VERSION=3.8.8
+VERSION=3.8.9
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GTK+ GUI toolkit for Win32 toolchain"
@@ -19,7 +19,7 @@ PATCH_URI="
 	3.8.6-enable-static.patch
 "
 
-DIFF_EXCLUDES="gdk.rc gtk.def"
+DIFF_EXCLUDES="gdk.rc gtk.def gtk3.types"
 # PRIVATE entries not supported on mingw64
 # gtkdbusgenerated: tarball was built with glib-2.38
 DISTCLEANFILES="gtk/gtk.def gtk/gtkdbusgenerated.*"
